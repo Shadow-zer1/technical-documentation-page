@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>Sentiment-Analysis SDK Documentation</header>
+    
+    <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Installation">Installation</a></li>
+        <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+        <li><a class="nav-link" href="#API_Reference">API Reference</a></li>
+        <li><a class="nav-link" href="#Advanced_Configuration">Advanced Configuration</a></li>
+        <li><a class="nav-link" href="#Best_Practices_&_Performance">Best Practices & Performance</a></li>
+        <li><a class="nav-link" href="#FAQ">FAQ</a></li>
+     </ul>
+  
+</nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>The Sentiment-Analysis SDK is a lightweight JavaScript wrapper that simplifies sentiment scoring for texts. It supports both browser and Node environments.</p>
+      <p>Built for interactive apps and large-scale data workflows, it streamlines language configuration and integrates error-handling into every analysis pipeline.</p>
+      <p>It is used in chatbots, email sentiment flagging, product review mining, and customer support routing.</p>
+      <ul>
+        <li>Real-time sentiment scores</li>
+        <li>Batch processing with callbacks</li>
+        <li>Flexible configuration</li>
+      </ul>
+      <p>Use <code>analyzeText()</code> to process a single input.</p>
+    </section>
+
+    <section id="Installation" class="main-section">
+      <header>Installation</header>
+      <p>You can add the SDK via npm or Yarn, or use a CDN script tag for quick setup.</p>
+      <p>Verify connectivity to the sentiment model before initiating requests.</p>
+      <ol>
+        <li>Install using a package manager</li>
+        <li>Reference the browser bundle</li>
+        <li>Authenticate with your API key</li>
+      </ol>
+      <p>The SDK initialization must be completed before invoking any analysis functions.</p>
+      <p>Use <code>initClient(config)</code> to begin setup.</p>
+    </section>
+
+    <section id="Getting_Started" class="main-section">
+      <header>Getting Started</header>
+      <p>Instantiate the client with credentials and base configuration options.</p>
+      <p>Set default language and desired thresholds for polarity classification.</p>
+      <ol>
+        <li>API key setup</li>
+        <li>Language preference</li>
+        <li>Method call and response interpretation</li>
+      </ol>
+      <p>The sentiment result returns a value between <code>-1</code> and <code>1</code>.</p>
+      <p>Use <code>getSentiment(text)</code> for quick access to scores.</p>
+    </section>
+
+    <section id="API_Reference" class="main-section">
+      <header>API Reference</header>
+      <p>Main SDK methods include:</p>
+      <ul>
+        <li><code>analyzeText(text, options)</code> – returns polarity and confidence</li>
+        <li><code>batchAnalyze(array, options)</code> – handles multiple items efficiently</li>
+        <li><code>setDefaultLanguage(code)</code> – sets fallback language</li>
+        <li><code>configureThreshold(min, max)</code> – customizes neutrality cutoff</li>
+        <li><code>onError(handler)</code> – catches and logs errors</li>
+      </ul>
+      <p>Each method accepts options like callbacks, language overrides, and return formats.</p>
+    </section>
+
+    <section id="Advanced_Configuration" class="main-section">
+      <header>Advanced Configuration</header>
+      <p>Configure the SDK using either global settings or local method overrides.</p>
+      <ul>
+        <li><strong>Language Support</strong> – multiple locales including EN, ES, FR</li>
+        <li><strong>Threshold Tuning</strong> – polarity sensitivity control</li>
+        <li><strong>Endpoint Selection</strong> – self-hosting or cloud inference</li>
+      </ul>
+      <p>Advanced modes allow chaining of custom plugins and batching control.</p>
+      <p>Call <code>sdk.setConfig()</code> to apply runtime preferences.</p>
+    </section>
+
+    <section id="Best_Practices_&_Performance" class="main-section">
+      <header>Best Practices & Performance</header>
+      <p>Optimize performance and results quality with the following tips:</p>
+      <ul>
+        <li>Preprocess input: trim spaces, remove HTML</li>
+        <li>Batch where possible: avoid throttling</li>
+        <li>Cache identical inputs</li>
+        <li>Monitor low-confidence outputs for accuracy</li>
+      </ul>
+      <p>Use <code>translateZ(0)</code> for GPU-accelerated rendering when combining with UI changes.</p>
+    </section>
+
+    <section id="FAQ" class="main-section">
+      <header>FAQ</header>
+      <p>Common questions about using the SDK:</p>
+      <ul>
+        <li><strong>How accurate is it?</strong></li>
+        <li>Best results for conversational inputs. Technical terms may reduce confidence.</li>
+        <li><strong>What languages are supported?</strong></li>
+        <li>English, Spanish, French, German, Chinese, Japanese.</li>
+        <li><strong>Can I send long text?</strong></li>
+        <li>Yes. Segmenting into chunks is recommended for faster response.</li>
+        <li><strong>Does it detect sarcasm?</strong></li>
+        <li>Detection of nuanced tone is limited. Human review is advised in edge cases.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <a href="https://www.freecodecamp.org/Shadow-zer1" target="_blank">@Shadow-zer1</a> — Built as part of FreeCodeCamp</p>
+  </footer>
+</body>
+</html>
