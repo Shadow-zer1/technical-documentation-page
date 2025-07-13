@@ -20,7 +20,12 @@ Designed as a demonstration project for learning semantic markup, responsive lay
 
 - HTML5
 - CSS3 (flexible layout, custom styling, and mobile adaptation)
-- GitHub Pages (optional deployment)
+- GitHub Pages (deployed for live access)
+
+## 🔗 Live Demo
+
+Check out the project online:  
+**[https://shadow-zer1.github.io/technical-documentation-page/](https://shadow-zer1.github.io/technical-documentation-page/)**
 
 ## 💡 How to Use
 
@@ -28,11 +33,9 @@ To view the documentation live:
 
 1. Clone the repository or download `index.html` and `styles.css`
 2. Open `index.html` in your browser
-3. Or visit the live GitHub Pages link (if enabled)
+3. Or visit the live GitHub Pages link above
 
 ## ✍️ Author
 
 Built by [@Shadow-zer1](https://www.freecodecamp.org/Shadow-zer1) as part of a certification challenge.  
 Crafted with precision by Shadow 🚀
-
----
