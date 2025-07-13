@@ -33,6 +33,6 @@ To view the documentation live:
 ## ✍️ Author
 
 Built by [@Shadow-zer1](https://www.freecodecamp.org/Shadow-zer1) as part of a certification challenge.  
-Crafted with precision by Sad 🚀
+Crafted with precision by Shadow 🚀
 
 ---
